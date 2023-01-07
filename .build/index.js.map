@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["// import { Day1Puzzle1, Day1Puzzle2 } from \"./code/day1\";\nimport { Day2Puzzle1, Day2Puzzle2 } from \"./code/day2\";\n\nconsole.log(Day2Puzzle1());\nconsole.log(Day2Puzzle2());"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AACA,kBAAyC;AAEzC,QAAQ,IAAI;AACZ,QAAQ,IAAI;",
+  "names": []
+}

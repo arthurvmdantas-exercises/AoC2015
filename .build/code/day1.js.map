@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../code/day1.ts"],
+  "sourcesContent": ["import { input } from \"../inputs/day1\";\n\nexport function Day1Puzzle1() {\n  let floor = 0;\n\n  input.split('').forEach(value => value === \"(\" ? floor++ : floor--);\n\n  return floor;\n}\n\nexport function Day1Puzzle2() {\n  let floor = 0;\n  let index = 0;\n\n  input.split('').every((value, idx) => {\n    value === \"(\" ? floor++ : floor--;\n    index = idx;\n    if (floor === -1) return false;\n    return true;\n  });\n\n  return index + 1;\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA,kBAAsB;AAEf,uBAAuB;AAC5B,MAAI,QAAQ;AAEZ,oBAAM,MAAM,IAAI,QAAQ,WAAS,UAAU,MAAM,UAAU;AAE3D,SAAO;AAAA;AAGF,uBAAuB;AAC5B,MAAI,QAAQ;AACZ,MAAI,QAAQ;AAEZ,oBAAM,MAAM,IAAI,MAAM,CAAC,OAAO,QAAQ;AACpC,cAAU,MAAM,UAAU;AAC1B,YAAQ;AACR,QAAI,UAAU;AAAI,aAAO;AACzB,WAAO;AAAA;AAGT,SAAO,QAAQ;AAAA;",
+  "names": []
+}
